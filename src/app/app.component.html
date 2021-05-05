@@ -1,11 +1,5 @@
-
-<h1>Olá mundo</h1>
-
-<div class="row">
-    <div class="col-6">
-        <img class="img-thumbnail" [src]="url" [alt]="title">
-    </div>
-    <div class="col-6">
-        <img class="img-thumbnail" [src]="url" [alt]="title">
-    </div>
-</div>
+<ap-photo 
+    *ngFor="let photo of photos" 
+        [url]="photo.url" 
+        [description]="photo.description">
+</ap-photo> 
