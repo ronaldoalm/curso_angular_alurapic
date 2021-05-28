@@ -5,7 +5,7 @@ import { Photo } from "./photo";
 @Injectable({providedIn:'root'})
 export class PhotoService{
 
-    private BASE_URL ;string = 'http://localhost:3000';
+    private BASE_URL : string = 'http://localhost:3000';
 
     constructor (private httpClient : HttpClient){}
 
