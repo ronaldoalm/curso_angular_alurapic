@@ -10,11 +10,13 @@ export class AppComponent {
   
   photos: Object[] = [];
 
-  constructor(photoService: PhotoService){
+  constructor(private photoService: PhotoService){
 
     const observable = photoService.listFromUser('flavio');
 
-    observable.subscribe(result => this.photos = result);
+    observable.subscribe(result => {
+      this.photos = result
+    });
   }
   
   

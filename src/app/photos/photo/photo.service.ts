@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Photo } from "./photo";
 
 @Injectable({providedIn:'root'})
 export class PhotoService{
@@ -9,6 +10,6 @@ export class PhotoService{
     constructor (private httpClient : HttpClient){}
 
     listFromUser(userName:string){
-        return this.httpClient.get<Object[]>(this.BASE_URL+"/flavio/photos");
+        return this.httpClient.get<Photo[]>(this.BASE_URL+"/flavio/photos");
     }
 }
