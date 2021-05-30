@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
+import { ErrosModule } from './erros/erros.module';
 import { PhotosModule } from './photos/photos.module';
 
 
@@ -13,6 +14,7 @@ import { PhotosModule } from './photos/photos.module';
   imports: [
     BrowserModule,
     PhotosModule,
+    ErrosModule,
     AppRoutingModule
     
   ],
