@@ -18,4 +18,5 @@ export class PhotoListComponent implements OnInit {
       this.photos = result
     });
   }
+  
 }
